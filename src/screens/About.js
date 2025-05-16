@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
-const Detail = ({ navigation }) => (
+const About = ({ navigation }) => (
   <View style={styles.container}>
-    <Text style={styles.title}>Detail User</Text>
-    <Text style={styles.content}>Nama: John Doe</Text>
-    <Text style={styles.content}>Telepon: 0812-3456-7890</Text>
-    <Text style={styles.content}>Email : Johndoe@example.com</Text>
+    <Text style={styles.title}>Tentang Photograph</Text>
+    <Text style={styles.content}>
+      Aplikasi ini merupakan eccomerce dari fotografi yang menyediakan berbagai produk dan layanan terkait fotografi.
+    </Text>
     <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Home')}>
       <Text style={styles.buttonText}>Kembali ke Home</Text>
     </TouchableOpacity>
@@ -16,7 +16,7 @@ const Detail = ({ navigation }) => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff3e0',
+    backgroundColor: '#e8f5e9',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 24,
@@ -24,20 +24,21 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 26,
     fontWeight: 'bold',
-    color: '#e65100',
+    color: '#388e3c',
     marginBottom: 20,
   },
   content: {
-    fontSize: 18,
-    color: '#6d4c41',
-    marginBottom: 8,
+    fontSize: 17,
+    color: '#2e7d32',
+    marginBottom: 30,
+    textAlign: 'center',
+    paddingHorizontal: 10,
   },
   button: {
-    backgroundColor: '#e65100',
+    backgroundColor: '#388e3c',
     paddingVertical: 14,
     paddingHorizontal: 36,
     borderRadius: 25,
-    marginTop: 30,
     alignItems: 'center',
     elevation: 2,
   },
@@ -48,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Detail;
+export default About;
